@@ -113,7 +113,7 @@ Also change host and port
 host = 0.0.0.0
 port = 80
 
-This will allow to be accesed in all networks in the port 80
+This will allow to be accessed in all networks in the port 80
 
 ```
 
