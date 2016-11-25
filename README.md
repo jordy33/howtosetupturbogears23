@@ -46,7 +46,7 @@ mkdir myproject
 cd myproject  
 virtualenv venv  
 source venv/bin/activate  
-pip install turbogears2 tg.devtools  
+pip install turbogears2 tg.devtools MySQL-python
 
 ```objc
 The quickstart command creates the Turbogears project also the command provides a bunch of options 
@@ -95,11 +95,13 @@ install_requires = [
     "repoze.who",
     "tw2.forms",
     "tgext.admin >= 0.6.1",
-    "WebHelpers2"
+    "WebHelpers2",
+    "transaction <= 2.0.2"
 ]
 ```
 
-* The following command will install all the modules required in the project:  
+* The following command will install all the modules required in the project: 
+* Warning!!! be sure to add the transaction<=2.0.2 on install_requires 
 
 pip install -e .
 
