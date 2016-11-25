@@ -72,7 +72,10 @@ optional arguments:
 ```
 
 * The following will create all the project files and structure according the parameters passed  
+
 gearbox quickstart -s -a -m myprojectname  
+cd myprojectname
+
 
 ```objc
 The file setup.py (created within the project structure) contains all the modules of the project. 
@@ -97,6 +100,7 @@ install_requires = [
 ```
 
 * The following command will install all the modules required in the project:  
+
 pip install -e .
 
 ```objc
@@ -107,14 +111,18 @@ sqlalchemy.url = mysql://myuser:qazwsxedc@127.0.0.1/mydatabase
 ```
 
 * Is necessary to have a production file just copy the development (is the same format)  
+
 cp development.ini production.ini
 
 ```objc
 The gearbox setup-app command runs the websetup.setup_app function of your project to initialize the database schema and data.
 By default the setup-app command is run on the development.ini file, to change this provide a different one to the --config option:
 ```
+
 * The following command will initialize the database  
+
 gearbox setup-app -c development.ini
+
 ```objc
 The serve command provides a bunch of options to start the serve in daemon mode, automatically restart the application whenever the code changes and many more:
 
@@ -144,19 +152,26 @@ optional arguments:
                         gearbox.pid file)
 ```
 * The following command will start the project in production mode (will run without debug)  
+
 gearbox serve -c production.ini --reload  
+
 ```objc
 or  
 ```
 * The following command will start the project in development mode (will run with debug)  
+
 gearbox serve -c development.ini --reload    
+
 ```objc
 or  
 ```    
 * The following command will start the project in production mode daemon (will run in the background)      
+
 gearbox serve -c production.ini --daemon
+
 ```objc
 or  
 ```    
 * The following command will stop the project in production mode daemon        
+
 gearbox serve -c production.ini --stop-daemon
