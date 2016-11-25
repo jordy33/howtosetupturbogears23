@@ -117,7 +117,7 @@ This will allow to be accessed in all networks on the port 80
 
 ```
 
-* Is necessary to have a production file just copy the development (is the same format)  
+* Its necessary to have a production file just copy the development (is the same format)  
 
 cp development.ini production.ini
 
