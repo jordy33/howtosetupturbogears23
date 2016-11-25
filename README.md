@@ -108,6 +108,13 @@ Modify the file development.ini (created within the project structure) and chang
 sqlalchemy.url = sqlite:///%(here)s/devdata.db
 with
 sqlalchemy.url = mysql://myuser:qazwsxedc@127.0.0.1/mydatabase
+
+Also change host and port
+host = 0.0.0.0
+port = 80
+
+This will allow to be accesed in all networks in the port 80
+
 ```
 
 * Is necessary to have a production file just copy the development (is the same format)  
